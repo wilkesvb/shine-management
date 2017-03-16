@@ -11,7 +11,7 @@ html {
     text-shadow: none;
 }
 
-::selection {
+::selection {;
     background: #b3d4fc;
     text-shadow: none;
 }
@@ -55,20 +55,134 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+$orange: #f15b29;
+$blue: #2b3991;
+
+* {
+    -box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+}
+
+body {
+    font-size: 1em;
+    font-family: "Helvetica Neue", sans-serif;
+}
 
 
+.wrapper {
+    display: block;
+    margin: 0 auto !important;
+    width: 100%;
+    max-width: 1250px;
+}
 
+header {
+    display: block;
+    width: 100%;
+    max-width: 1250px;
+    height: auto;
+    margin: 0 auto !important;
+    padding: 40px 100px 20px;
+    background: white;
+    border-bottom: 18px solid $orange;
+    .logo {
+        width: 100%;
+        max-width: 265px;
+        height: auto !important;
+    }
+    nav {
+        display: block;
+        padding: 42px 0px;
+        float: right;
+        font-size: .8em;
+        ul {
+            display: inline;
+            max-width: auto;
+            text-decoration: none;
+            li {
+                display: inline-block;
+                margin-left: 50px;
+                color: $blue;
+                border-bottom: 3px solid white;
+                &:hover {
+                    border-bottom: 3px solid $orange;
+                }
+            }
+        }
+    }
+}
 
+footer {
+    display: block;
+    margin: 0 auto !important;
+    padding: 15px 0px;
+    width: 100%;
+    height: auto;
+    background: $blue;
+    text-align: center;
+    color: white;
+    font-size: .6em;
+}
 
+.section.hero {
+}
 
+.home .hero img {
+    width: 100%;
+}
 
+div[class*="home-hero-"] {
+    height: auto;
+    min-height: 285px;
+    color: white;
+    font-size: 1.2em;
 
+}
 
+.home-hero-left {
+    display: inline-block;
+    width: 100%;
+    max-width: 55%;
+    margin-top: -50px;
+    background: rgb(254,231,225); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(254,231,225,1) 0%, rgba(241,91,41,1) 40%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(254,231,225,1) 0%,rgba(241,91,41,1) 40%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(254,231,225,1) 0%,rgba(241,91,41,1) 40%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fee7e1', endColorstr='#f15b29',GradientType=1 ); /* IE6-9 */
+    line-height: 1.6em;
+    .feature-wrap {
+        padding-left: 27%;
+        padding-right: 30px;
+    }
+    ul {
+        padding-left: 20px;
+    }
+}
 
+.home-hero-right {
+    display: inline-block;
+    float: right;
+    width: 100%;
+    max-width: 45%;
+    background: rgb(43,57,145); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(43,57,145,1) 60%, rgba(121,130,185,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(43,57,145,1) 60%,rgba(121,130,185,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(43,57,145,1) 60%,rgba(121,130,185,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b3991', endColorstr='#7982b9',GradientType=1 ); /* IE6-9 */
+    padding: 45px 75px 45px 40px;
+    text-align: justify;
+}
 
-
-
-
+button {
+    padding: 5px 13px;
+    background: transparent;
+    border: 1px solid white;
+    font-size: .6em;
+    &:hover {
+        color: $orange;
+        background: white;
+    }
+}
 
 /* ==========================================================================
    Media Queries
