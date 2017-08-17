@@ -1,71 +1,98 @@
-<!doctype html>
-<html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<?php get_header(); ?>
 
-    <link rel="stylesheet" href="stylesheets/normalize.css">
-    <link rel="stylesheet" href="stylesheets/main.css">
+      <div class="home clearfix">
 
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-  </head>
-  <body>
+        <section class="hero">
 
-    <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+          <img class="clearfix" src="<?php echo get_template_directory_uri(); ?>/img/cityscape_cropped.jpg" alt="image of cityscape">
 
-    <div class="wrapper">
+        </section>
 
-      <header>
+        <section>
 
-        <a href="/"><img class="logo" src="img/shine_management_site_logo.png"/></a>
+          <div class="home-hero-left">
 
-        <nav class="">
-          <ul>
-            <a href=""><li>HOME</li></a>
-            <a href=""><li>ABOUT</li></a>
-            <a href=""><li>SERVICES</li></a>
-            <a href=""><li>SOLUTIONS</li></a>
-            <a href=""><li>CONTACTS</li></a>
-          </ul>
-        </nav>
+            <div class="feature-wrap">
 
-      </header>
+              <h4>LOREM IPSUM DOLOR SIT AMET</h4>
+              
+                <ul>
+                  <li>ut et augue quis elit.</li>
+                  <li>ut et augue quis elit.</li>
+                  <li>ut et augue quis elit.</li>
+                  <li>ut et augue quis elit.</li>
+                </ul>
+    
+                <button>LEARN MORE</button>
 
-      <div class="home">
+              </div>
+
+          </div>
+
+          <div class="home-hero-right">
+            
+            <p>Will Provide Outsourced Back Office (Accounting, IT, Marketing, Recruiting, Travel, Etc. Support To The Existing SHINE Family of Businesses (e.g. SHINE Innovations, LLC) And Other Small Businesses Including Those In The Federal And Commercial Marketplaces.</p>
+
+          </div>
+
+        </section>
         
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <section class="sidebar">
+          
+          <ul>
+            <li><a href="/">Overview</a></li>
+            <li><a href="/">Audit & Assurance Services</a></li>
+            <li><a href="/">Deltek Systems Consulting</a></li>
+            <li><a href="/">Employee Benefit Plan Services</a></li>
+            <li><a href="/">Employers</a></li>
+            <li><a href="/">Candidates</a></li>
+            <li><a href="/">Financial Advisory Services</a></li>
+            <li><a href="/">Government Conract Consulting</a></li>
+            <li><a href="/">Employee Benefit Plan Services</a></li>
+            <li><a href="/">Employers</a></li>
+            <li><a href="/">Candidates</a></li>
+            <li><a href="/">Financial Advisory Services</a></li>
+          </ul>
 
+        </section>
+
+        <section class="content">
+
+          <h3>LOREM IPSUM DOLOR SIT AMET</h3>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+          <ul>
+            <li>Proin sit amet libero eget ipsum venantis iaculis.</li>
+            <li>Proin sit amet libero eget ipsum venantis iaculis.</li>
+            <li>Proin sit amet libero eget ipsum venantis iaculis.</li>
+            <li>Proin sit amet libero eget ipsum venantis iaculis.</li>
+            <li>Proin sit amet libero eget ipsum venantis iaculis.</li>
+            <li>Proin sit amet libero eget ipsum venantis iaculis.</li>
+          </ul>
+
+          <button class="orange-button">LEARN MORE</button>
+
+        </section>
+        
       </div>
 
+      <section class="hero-footer">
 
-      <footer>
-        <p>434-422-4220<br>
-        Copyright 2017 SHINE Innovations LLC</p>
-      </footer>
+        <div class="footer-hero-left">
 
+          <div class="feature-wrap">
+            <div class="border-white"><img src="<?php echo get_template_directory_uri(); ?>/img/line-chart.png" alt="hero-img"></div>
+            <h4>LOREM SUM</h4>
+            <p>dolor sit amet, consectetur adipiscing elit. Donec aliquet laoreet condeimentum.</p>
+          </div>
 
-    </div>
+        </div>
 
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <div class="footer-hero-right">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/computer-footer-hero.jpg" alt="hero-img">
+        </div>
 
-      <script src="js/plugins.js"></script>
-      <script src="js/main.js"></script>
+      </section>
 
-      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-      <script>
-          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-          e.src='//www.google-analytics.com/analytics.js';
-          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-          ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-      </script>
-  </body>
-</html>
+<?php get_footer(); ?>
