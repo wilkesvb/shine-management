@@ -1,4 +1,5 @@
 <section class="hero">
+    <?php putRevSlider('homepage', 'homepage'); ?>
 
     <?php 
 
@@ -11,15 +12,6 @@
 
     <?php if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
-    <?php 
-
-    $image = get_field('hero_image');
-
-    if( !empty($image) ): ?>
-
-    <img class="clearfix" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-
-    <?php endif; ?>
 
   </section>
 

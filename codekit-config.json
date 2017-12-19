@@ -14,15 +14,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/stylesheets\/main.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/stylesheets\/main.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/footer-facts.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -31,6 +22,15 @@
       "inputAbbreviatedPath" : "\/footer-facts.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/stylesheets\/main.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/stylesheets\/main.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/js\/plugins.js" : {
       "ignoreWasSetByUser" : 0,
@@ -43,15 +43,6 @@
       "outputAbbreviatedPath" : "\/js\/plugins-ck.js",
       "fileType" : 64
     },
-    "\/header.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/header.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/img\/id-card.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -62,6 +53,24 @@
       "outputAbbreviatedPath" : "\/img\/id-card.png",
       "initialSize" : 7074,
       "fileType" : 8192
+    },
+    "\/header.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/header.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/legacy-code.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/legacy-code.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/img\/apple-icon-precomposed.png" : {
       "ignoreWasSetByUser" : 0,
@@ -148,15 +157,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/stylesheets\/print.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/stylesheets\/print.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/home.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -166,17 +166,23 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/sass\/ie.scss" : {
+    "\/stylesheets\/print.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/stylesheets\/print.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/sass\/social-links.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/ie.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/stylesheets\/ie.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/sass\/social-links.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/img\/apple-icon-76x76.png" : {
       "ignoreWasSetByUser" : 0,
@@ -189,14 +195,17 @@
       "initialSize" : 6036,
       "fileType" : 8192
     },
-    "\/sass\/social-links.html" : {
+    "\/sass\/ie.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/social-links.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/sass\/ie.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/stylesheets\/ie.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/img\/apple-icon-60x60.png" : {
       "ignoreWasSetByUser" : 0,
@@ -326,6 +335,17 @@
       "initialSize" : 42581,
       "fileType" : 8192
     },
+    "\/screenshot.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/screenshot.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/screenshot.png",
+      "initialSize" : 724781,
+      "fileType" : 8192
+    },
     "\/img\/cityscape_cropped.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -337,17 +357,6 @@
       "initialSize" : 111174,
       "fileType" : 4096
     },
-    "\/img\/line-chart.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/line-chart.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/line-chart.png",
-      "initialSize" : 7340,
-      "fileType" : 8192
-    },
     "\/home-hero.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -357,15 +366,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/img\/apple-icon-72x72.png" : {
+    "\/img\/line-chart.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/apple-icon-72x72.png",
+      "inputAbbreviatedPath" : "\/img\/line-chart.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/apple-icon-72x72.png",
-      "initialSize" : 5550,
+      "outputAbbreviatedPath" : "\/img\/line-chart.png",
+      "initialSize" : 7340,
       "fileType" : 8192
     },
     "\/img\/favicon-16x16.png" : {
@@ -401,25 +410,27 @@
       "outputAbbreviatedPath" : "\/js\/vendor\/jquery-1.11.2.min-ck.js",
       "fileType" : 64
     },
-    "\/screenshot.png" : {
+    "\/img\/android-icon-144x144.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/screenshot.png",
+      "inputAbbreviatedPath" : "\/img\/android-icon-144x144.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/screenshot.png",
-      "initialSize" : 724781,
+      "outputAbbreviatedPath" : "\/img\/android-icon-144x144.png",
+      "initialSize" : 14864,
       "fileType" : 8192
     },
-    "\/page.php" : {
+    "\/img\/apple-icon-72x72.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/page.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/img\/apple-icon-72x72.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/apple-icon-72x72.png",
+      "initialSize" : 5550,
+      "fileType" : 8192
     },
     "\/img\/apple-icon-57x57.png" : {
       "ignoreWasSetByUser" : 0,
@@ -432,16 +443,14 @@
       "initialSize" : 4033,
       "fileType" : 8192
     },
-    "\/img\/android-icon-144x144.png" : {
+    "\/page.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/android-icon-144x144.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/android-icon-144x144.png",
-      "initialSize" : 14864,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/page.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/front-page.php" : {
       "ignoreWasSetByUser" : 0,
