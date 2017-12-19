@@ -29,10 +29,10 @@
 
       <div class="feature-wrap">
 
-        <h4><?php the_field( 'info_left_header' ); ?></h4>
+        <?php the_field( 'info_left_header' ); ?>
       
-        <?php the_field( 'info_left_list_info' ); ?>
-
+<!--         <?php the_field( 'info_left_list_info' ); ?>
+ -->
         <a href="<?php the_field( 'info_button_link' ); ?>"><button><?php the_field( 'info_button_label' ); ?></button></a>
 
       </div>

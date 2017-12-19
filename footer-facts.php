@@ -12,74 +12,89 @@
         <?php if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
         <div class="fact">
-          <div class="border-orange">
+
+          <a href="<?php get_field('fact_1_link')?>">
+
+            <div class="border-orange">
+              
+              <?php 
+
+              $image = get_field('fact_1_img');
+
+              if( !empty($image) ): ?>
+
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+              <?php endif; ?>
+        
+            </div>
             
-            <?php 
+            <div class="push">
 
-            $image = get_field('fact_1_img');
+              <h4><?php the_field( 'fact_1_header' ); ?></h4>
+              <p><?php the_field( 'face_1_text' ); ?></p>
 
-            if( !empty($image) ): ?>
-
-              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-
-            <?php endif; ?>
-      
-          </div>
+            </div>
           
-          <div class="push">
-
-            <h4><?php the_field( 'fact_3_header' ); ?></h4>
-            <p><?php the_field( 'face_3_text' ); ?></p>
-
-          </div>
-          
-        </div>
-
-        <div class="fact">
-          <div class="border-orange">
-            
-            <?php 
-
-            $image = get_field('fact_2_img');
-
-            if( !empty($image) ): ?>
-
-              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-
-            <?php endif; ?>
-
-          </div>
-          
-          <div class="push">
-
-            <h4><?php the_field( 'fact_3_header' ); ?></h4>
-            <p><?php the_field( 'face_3_text' ); ?></p>
-
-          </div>
+          </a>
 
         </div>
 
         <div class="fact">
-          <div class="border-orange">
+ 
+          <a href="<?php get_field('fact_2_link')?>">
+
+            <div class="border-orange">
+              
+              <?php 
+
+              $image = get_field('fact_2_img');
+
+              if( !empty($image) ): ?>
+
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+              <?php endif; ?>
+
+            </div>
             
-            <?php 
+            <div class="push">
 
-            $image = get_field('fact_3_img');
+              <h4><?php the_field( 'fact_2_header' ); ?></h4>
+              <p><?php the_field( 'face_2_text' ); ?></p>
 
-            if( !empty($image) ): ?>
+            </div>
+            
+          </a>
 
-              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+        </div>
 
-            <?php endif; ?>
-      
-          </div>
+        <div class="fact">
 
-          <div class="push">
+          <a href="<?php get_field('fact_3_link')?>">
 
-            <h4><?php the_field( 'fact_3_header' ); ?></h4>
-            <p><?php the_field( 'face_3_text' ); ?></p>
+            <div class="border-orange">
+              
+              <?php 
 
-          </div>
+              $image = get_field('fact_3_img');
+
+              if( !empty($image) ): ?>
+
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+              <?php endif; ?>
+        
+            </div>
+
+            <div class="push">
+
+              <h4><?php the_field( 'fact_3_header' ); ?></h4>
+              <p><?php the_field( 'face_3_text' ); ?></p>
+
+            </div>
+
+          </a>
 
         </div>
         

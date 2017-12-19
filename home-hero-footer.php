@@ -46,10 +46,13 @@
     if( !empty($image) ): ?>
 
     <img class="clearfix" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-
+  
     <?php endif; ?>
 
+    <?php the_field( 'footer_info_information' ); ?>
+
     <?php endwhile; endif; wp_reset_postdata(); ?>
+
 
   </div>
 
