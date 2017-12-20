@@ -35,7 +35,8 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
-
+/*Add theme support*/
+add_theme_support( 'post-thumbnails' );
 
 /*Custom Theme Options Page*/
 

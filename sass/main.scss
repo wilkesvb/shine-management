@@ -66,7 +66,7 @@ $phone: 640px;
 * {
     -box-sizing: border-box !important;
     -webkit-box-sizing: border-box !important;
-    transition: all .2s;
+    transition: all .2s !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -104,6 +104,20 @@ button.orange-button {
 }
 .clear {
     clear: both;
+}
+
+.alignleft {
+    float: left; 
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.alignright {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.aligncenter {
+    margin: 20px auto !important;
 }
 body {
     font-size: 1em;
@@ -157,6 +171,31 @@ header {
                 border-bottom: 3px solid white;
                 &:hover {
                     border-bottom: 3px solid $orange;
+                    ul {
+                        display: block;
+                    }
+                }
+                ul {
+                    position: absolute;
+                    display: none;
+                    max-width: auto;
+                    padding: 10px;
+                    text-decoration: none;
+                    background: $ltgray;
+                    z-index: 10;
+                    li.current-menu-item {
+                        border-bottom: 3px solid $orange;
+                    }
+                    li {
+                        display: block;
+                        width: auto;
+                        margin-left: 0px;
+                        text-transform: uppercase;
+                        border-bottom: 3px solid white;
+                        /*&:hover {
+                            border-bottom: 3px solid $orange;
+                        }*/
+                    }
                 }
             }
         }
@@ -274,6 +313,7 @@ div[class*="home-hero-"] {
 section.home-cta {
     padding: 40px 85px 20px;
     background: $orange;
+    z-index: 10 !important;
     h1, h2, h3, h4, h5, h6 {
         color: white !important;
     }
@@ -386,14 +426,26 @@ div.border-orange {
         box-shadow: none;
     }
     section.content {
-        box-shadow: -5px 0px 28px 5px #d0d0d0;
+        box-shadow: -5px -10px 28px 5px #d0d0d0;
         z-index: 0;        
         article {
+            position: relative;
             margin-bottom: 50px;
             a {
                 text-decoration: none;
             }
             &:hover {
+                &:after {
+                    position: absolute;
+                    content: "";
+                    width: 110%;
+                    height: 120%;
+                    left: -5%;
+                    top: -10%;
+                    background-color: $ltgray;
+                    z-index: -10;
+                    transition: ease .2s;
+                }
                 h2 {
                     position: relative;
                 }
@@ -402,24 +454,25 @@ div.border-orange {
                     content: '▶';
                     color: $blue;
                     font-size: .8em;
+                    transform: translateX(10px);
                     top: 1px;
                 }
             }
         }
         span.page-title-span {
-            background-color: white;
             display: inline-block;
             float: right;
             min-width: 40%;
+            max-width: 90%;
             margin-top: -85px;
-            margin-right: -85px;
+            background-color: transparent !important;
         } 
         .page-title {
             position: relative;
             width: 100%;
             display: inline-block;
             float: right;
-            margin: -15px 0px 0px;
+            margin: 20px 0px 0px;
             padding: 40px 20px;
             font-size: 1.5em;
             color: white;
@@ -444,6 +497,9 @@ body.home {
     }
 }
 
+body.home section.content {
+    padding-top: 130px;
+}
 
 section.content {
     width: 70%;
@@ -475,8 +531,34 @@ section.content {
     }
 }
 
-body.home section.content {
-    padding-top: 130px;
+.single section.content, 
+.page section.content,
+.blog section.content {
+    margin-top: 35px;
+    padding: 0px 0px 60px;
+}
+
+.blog section.content {
+    padding: 60px 85px 60px;
+    .page-title {
+        margin-top: -35px;
+        margin-right: -85px;
+    }
+}
+
+div.entry-content {
+    padding: 60px 85px 60px;
+}
+
+body.home .entry-content {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.page-thumbnail img {
+    width: 100%;
+    height: auto !important;
+    margin-top: -45px;
 }
 
 blockquote {
@@ -487,6 +569,28 @@ blockquote {
 
 .post-meta {
     color: $orange;
+}
+
+.pagination {
+    >div {
+        text-align: center;
+        margin: 0px;
+    }
+    margin-top: 30px;
+    a {
+        display: inline-block;
+        width: 100px;
+        padding: 8px;
+        font-size: .8em;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: $blue;
+        color: white;
+        &:hover {
+            background: $gray;
+            color: white;
+        }
+    }
 }
 
 /*Contact Forms*/
@@ -635,12 +739,19 @@ div[role="form"] {
     body.home section.content {
         padding-top: 35px;
     }
+    .page section.content span.page-title-span,
+    .blog section.content span.page-title-span,
+    .single section.content span.page-title-span {
+        min-width: 60%;
+        max-width: 90%;
+        margin-right: 0px;
+    }
 }
 
 
 @media (max-width: $phone) {
     header {
-        padding: 10px 35px;
+        padding: 10px 10%;
         border-bottom: 9px solid $orange;
     }
     
@@ -651,15 +762,19 @@ div[role="form"] {
         text-align: left;
     }
     section.sidebar,
-    section.content,
+    .blog section.content,
     section.facts {
-        padding-left: 35px;
+        padding-left: 10% !important;
     }
     .home-hero-right,
-    section.content,
+    .blog section.content,
     section.facts {
         width: 100%;
-        padding-right: 35px;
+        padding-right: 10% !important;
+    }
+    div.entry-content {
+        padding-left: 10%;
+        padding-right: 10%;
     }
     section.sidebar {
         display: none;
@@ -686,7 +801,9 @@ div[role="form"] {
         width: 100% !important;
     }
 
-    .page section.content {
+    .page section.content,
+    .single section.content,
+    .blog section.content {
         width: 90%;
         margin-left: 10%;
     }
@@ -695,7 +812,7 @@ div[role="form"] {
     .single section.content span.page-title-span {
         min-width: 60%;
         margin-top: -70px;
-        margin-right: -35px;
+        margin-right: 0px;
     }
     .page section.content .page-title,
     .blog section.content .page-title,
